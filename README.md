@@ -1,5 +1,24 @@
 # 데이타몬드 백엔드 개발 과제
 
+## 시작 방법
+1. docker-compose --env-file='.env.dev' up -d
+1. http://localhost:3000/api 확인
+
+## 해결 과제
+
+1. 위 요구사항에 대해, 어떤식으로 구성하면 좋을지 AWS 인프라 아키텍처를 그려주세요. (자유 형식)
+   - survey-infra.png 확인
+1. 위 요구사항에 맞는 테이블 ERD를 그려주세요.
+   - survey-erd.png 확인
+1. 설문 생성 API, 설문 참여 API, 설문 통계 조회 API를 만들어주세요.
+   - mariadb 사용, 통계 조회 시 raw query 사용
+   - 설문 create, read API, 설문 참여 API, 설문 통계 조회 API
+1. 각 API에 대한 테스트 케이스가 추가되면 좋습니다.
+   - 설문 READ 만 하였음, 자체 QA 는 진행하였음.
+1. API 문서도 추가되면 좋습니다. ([참고](https://docs.nestjs.com/openapi/introduction))
+   - http://localhost:3000/api 확인
+
+
 ## 요구사항
 
 1. 설문 서비스를 개발합니다.
